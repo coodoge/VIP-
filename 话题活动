@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>游戏周年庆分享问卷（演示版）</title>
+  <style>
+    body {
+      font-family: "Arial", sans-serif;
+      background-color: #f0f8ff;
+      padding: 30px;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+    }
+
+    p {
+      font-size: 16px;
+      color: #34495e;
+      line-height: 1.5;
+    }
+
+    label {
+      display: block;
+      margin-top: 20px;
+      font-weight: bold;
+      color: #2c3e50;
+    }
+
+    input[type="text"],
+    input[type="file"],
+    textarea,
+    select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 8px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      box-sizing: border-box;
+      font-size: 14px;
+    }
+
+    textarea {
+      min-height: 80px;
+      resize: vertical;
+    }
+
+    button {
+      margin-top: 25px;
+      width: 100%;
+      background-color: #3498db;
+      color: white;
+      border: none;
+      padding: 12px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #2980b9;
+    }
+
+    .note {
+      font-size: 13px;
+      color: #888;
+      margin-top: 5px;
+    }
+
+    .demo-tip {
+      margin-top: 30px;
+      font-style: italic;
+      color: #999;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🎮 游戏周年庆分享话题活动</h1>
+  <p>
+    一起庆祝我们的游戏周年庆吧！<br>
+    在社交平台分享你的周年战报，并将分享截图上传至下方问卷，同时写下你对游戏的祝福，就有机会赢取周年礼物🎁！
+  </p>
+
+  <form onsubmit="alert('（演示）提交成功，感谢你的参与！'); return false;">
+    <label for="playtime">你玩这款游戏有多久了？</label>
+    <select id="playtime">
+      <option value="">请选择</option>
+      <option>不到1个月</option>
+      <option>1-3个月</option>
+      <option>3-6个月</option>
+      <option>半年到1年</option>
+      <option>超过1年</option>
+    </select>
+
+    <label for="platform">分享平台：</label>
+    <input type="text" id="platform" placeholder="如：微博、朋友圈、B站">
+
+    <label for="screenshot">上传截图：</label>
+    <input type="file" id="screenshot" accept="image/*">
+    <div class="note">请上传你在社媒分享周年战报的截图</div>
+
+    <label for="wish">对游戏的祝福：</label>
+    <textarea id="wish" placeholder="写下一句话，祝福游戏生日快乐吧！"></textarea>
+
+    <button type="submit">提交（演示）</button>
+  </form>
+
+  <div class="demo-tip">* 本页面为演示用途，不保存实际数据。</div>
+
+</body>
+</html>
